@@ -1,3 +1,28 @@
-config:
-  info: "master branch,springcloud-config/config-dev.yml version=1"
+server:
+  port: 3355
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      label: master
+      name: config
+      profile: dev
+      uri: http://localhost:3344
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7001.com:7001/eureka/
+
+  #datasource:
+    # 当前数据源操作类型
+    #type: com.alibaba.druid.pool.DruidDataSource
+    # mysql驱动类
+    #driver-class-name: com.mysql.cj.jdbc.Driver
+    #url: jdbc:mysql://rm-wz9236i8x4rr80nl3go.mysql.rds.aliyuncs.com:3306/promotion?characterEncoding=utf-8&useUnicode=true
+    #username: promotionuser
+    #password: Promotionuser123
 
