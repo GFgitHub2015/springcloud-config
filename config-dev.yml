@@ -1,7 +1,5 @@
 server:
   port: 3355
-config:
-  info: config-dev_test
 spring:
   application:
     name: config-client
@@ -11,7 +9,8 @@ spring:
       name: config
       profile: dev
       uri: http://localhost:3344
-
+config:
+  info: config-dev_test
 eureka:
   client:
     register-with-eureka: true
