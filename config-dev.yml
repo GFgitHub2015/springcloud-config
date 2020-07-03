@@ -10,7 +10,7 @@ spring:
       profile: dev
       uri: http://localhost:3344
 config: 
-  info: config-dev_test
+  info: config-dev_test1
 eureka:
   client:
     register-with-eureka: true
