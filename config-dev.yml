@@ -1,7 +1,7 @@
 server:
   port: 3355
 config:
-  info: config-dev test
+  info: config-dev_test
 spring:
   application:
     name: config-client
