@@ -9,7 +9,7 @@ spring:
       name: config
       profile: dev
       uri: http://localhost:3344
-config:
+config: 
   info: config-dev_test
 eureka:
   client:
